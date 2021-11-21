@@ -96,7 +96,7 @@ public class View implements AddingObserver, DeletingObserver, FIleListObserver,
 
         //Adding root menu
         rootMenuItem.menuItems.clear();
-        rootMenuItem.addMenuNode(new MenuItem("Change working directory",controller::setRootDirectory));
+        rootMenuItem.addMenuNode(new MenuItem("Mention Path of Directory you want go",controller::setRootDirectory));
         rootMenuItem.addMenuNode(new MenuItem("Show file list in working directory",controller::getFileList));
 
         MenuItem businesOperation=new MenuItem("Business operation",this::showMenu);
